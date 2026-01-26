@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-purple600: hsl(246, 80%, 60%);
+  --color-orange300: hsl(15, 100%, 70%);
+  --color-blue300: hsl(195, 74%, 62%);
+  --color-pink400: hsl(348, 100%, 68%);
+  --color-green400: hsl(145, 58%, 55%);
+  --color-purple700: hsl(264, 64%, 52%);
+  --color-yellow300: hsl(43, 84%, 65%);
+  --color-navy950: hsl(226, 43%, 10%);
+  --color-navy900: hsl(235, 46%, 20%);
+  --color-purple500: hsl(235, 45%, 61%);
+  --color-navy200: hsl(236, 100%, 87%);
+
+  --font-family: Rubik, sans-serif;
+  --fontWeight-small: 300;
+  --fontWeight-regular: 400;
+  --fontWeight-medium: 500;
+
+  --fontSize-sm: 0.875rem;
+  --fontSize-lg: 1.125rem;
+  --fontSize-md: 1rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-navy950);
+}
+
+main {
+  width: min(90%, 23.438rem);
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  font-family: var(--font-family);
+  gap: 1rem;
+}
+
+.profile {
+  background-color: var(--color-navy900);
+  border-radius: 0.75rem;
+}
+
+.profile__data {
+  display: flex;
+  background-color: var(--color-purple600);
+  justify-content: center;
+  gap: 0.5rem;
+  padding: clamp(0.5rem, 0.75rem, 1rem);
+
+  border-radius: 0.75rem;
+}
+
+.profile__image {
+  height: 3.125rem;
+  width: 3.125rem;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.profile__user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile__reportFor {
+  color: var(--color-navy200);
+  font-weight: var(--fontWeight-small);
+  font-size: var(--fontSize-sm);
+}
+
+.profile__name {
+  color: var(--color-navy200);
+  font-weight: var(--fontWeight-medium);
+  font-size: var(--fontSize-lg);
+}
+
+.profile__stats {
+  padding: clamp(0.5rem, 0.75rem, 1rem);
+}
+
+.profile__statsList {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.75rem;
+
+  list-style: none;
+}
+
+.profile__switchStats {
+  color: var(--color-purple500);
+}
+
+.active {
+  color: var(--color-navy200);
+}
+
+.statsConteiner {
+  display: grid;
+  gap: 1rem;
+}
+
+.stat-card {
+  border-radius: 0.75rem;
+}
+
+.stat-card__icon {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 0.5rem;
+
+}
+
+.stat-card__icon img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.stat-card__content {
+  padding: clamp(1rem, 1.25rem, 1.5rem);
+
+  border-radius: 0.75rem;
+  background-color: var(--color-navy900);
+}
+
+.stat-card__header, .stat-card__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.stat-card__title, .stat-card__current {
+    color: var(--color-navy200);
+}
+
+.stat-card__previous {
+    color: var(--color-purple500);
+}
+
+
+.work {
+  background-color: var(--color-orange300);
+}
+
+.play {
+  background-color: var(--color-blue300);
+}
+
+.study {
+  background-color: var(--color-pink400);
+}
+
+.exercise {
+    background-color: var(--color-green400);
+}
+
+.social {
+    background-color: var(--color-purple700);
+}
+
+.self-care {
+    background-color: var(--color-yellow300);
+}
+
+

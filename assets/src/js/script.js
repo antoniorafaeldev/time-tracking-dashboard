@@ -19,7 +19,13 @@ function renderStats(timeframe) {
         const cardDiv = document.createElement("div");
         cardDiv.classList.add('stat-card', cardClass);
 
+        const iconName = title.toLowerCase().replace(' ', '-');
+        const iconSrc = `assets/img/icon-${iconName}.svg`;
+
         cardDiv.innerHTML = `
+          <div class="stat-card__icon">
+            <img src="${iconSrc}" alt="">
+          </div>
           <div class="stat-card__content">
             <div class="stat-card__header">
               <span class="stat-card__title">${title}</span>
