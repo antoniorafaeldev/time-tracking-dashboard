@@ -26,6 +26,7 @@
 
   --fontSize-sm: 0.875rem;
   --fontSize-lg: 1.125rem;
+  --fontSize-xl: 2rem;
   --fontSize-md: 1rem;
 }
 
@@ -94,12 +95,13 @@ main {
   display: flex;
   justify-content: space-evenly;
   gap: 0.75rem;
-
+  cursor: pointer;
   list-style: none;
 }
 
 .profile__switchStats {
   color: var(--color-purple500);
+  cursor: pointer;
 }
 
 .active {
@@ -116,10 +118,9 @@ main {
 }
 
 .stat-card__icon {
-    display: flex;
-    flex-direction: row-reverse;
-    padding-right: 0.5rem;
-
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 0.5rem;
 }
 
 .stat-card__icon img {
@@ -128,26 +129,32 @@ main {
 }
 
 .stat-card__content {
-  padding: clamp(1rem, 1.25rem, 1.5rem);
-
+  padding: 1rem;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
   border-radius: 0.75rem;
   background-color: var(--color-navy900);
 }
 
-.stat-card__header, .stat-card__body {
-    display: flex;
-    justify-content: space-between;
-    align-items: center
+.stat-card__content:hover {
+  background-color: var(--color-purple500);
+
+}
+.stat-card__header,
+.stat-card__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.stat-card__title, .stat-card__current {
-    color: var(--color-navy200);
+.stat-card__title,
+.stat-card__current {
+  color: var(--color-navy200);
 }
 
 .stat-card__previous {
-    color: var(--color-purple500);
+  color: var(--color-purple500);
 }
-
 
 .work {
   background-color: var(--color-orange300);
@@ -162,15 +169,13 @@ main {
 }
 
 .exercise {
-    background-color: var(--color-green400);
+  background-color: var(--color-green400);
 }
 
 .social {
-    background-color: var(--color-purple700);
+  background-color: var(--color-purple700);
 }
 
 .self-care {
-    background-color: var(--color-yellow300);
+  background-color: var(--color-yellow300);
 }
-
-
