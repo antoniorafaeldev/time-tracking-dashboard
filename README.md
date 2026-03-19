@@ -26,7 +26,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ### Links
 - Acesse a URL da solução [clicando aqui](https://github.com/Antonio-Rafael-Silva/time-tracking-dashboard)
-- Acesse o site do projeto [clicando aqui](https://antonio-rafael-silva.github.io/time-tracking-dashboard/)
+- Acesse o site do projeto [clicando aqui](https://antoniorafaeldev.github.io/time-tracking-dashboard/)
 
 ## Screenshot do resultado
 
